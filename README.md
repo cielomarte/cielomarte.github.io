@@ -1,1 +1,1 @@
-# cielomarte.github.io
+Anti-Doom-Scroll Social Club static site.

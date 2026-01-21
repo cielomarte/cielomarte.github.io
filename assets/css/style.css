@@ -1,0 +1,15 @@
+
+/* =========================
+   Anti-Doom-Scroll UI Theme
+   ========================= */
+:root{
+  --bg:#c9c9c9; --panel:#dcdcdc; --panel-2:#e8e8e8; --ink:#101010;
+  --border-dark:#2a2a2a; --accent:#2b2bff;
+  --font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:var(--font);color:var(--ink)}
+.container{max-width:960px;margin:24px auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;border:2px solid var(--border-dark);padding:10px;background:var(--panel)}
+nav a{margin-left:8px;text-decoration:none;border:2px solid var(--border-dark);padding:4px 8px;color:var(--ink)}
+.window{border:2px solid var(--border-dark);background:var(--panel);margin-top:16px;padding:12px}
