@@ -1,8 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Join • Anti-Doom-Scroll</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
 
-<!doctype html><html><head><meta charset="utf-8">
-<title>Join</title>
-<link rel="stylesheet" href="assets/css/style.css"></head>
-<body><div class="container">
-<header><strong>Join</strong></header>
-<div class="window"><p>Join content</p></div>
-</div></body></html>
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <div class="title">ANTI-DOOM-SCROLL SOCIAL CLUB</div>
+          <div class="kicker">Join Once • Participate Anywhere</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">HOME</a>
+        <a href="clubs.html">CLUBS</a>
+        <a href="events.html">EVENTS</a>
+        <a href="join.html" aria-current="page">JOIN</a>
+        <a href="tools.html">TOOLS</a>
+        <a href="about.html">ABOUT</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section class="window">
+        <div class="bar">
+          <div class="name">JOIN THE NETWORK</div>
+          <div class="controls" aria-hidden="true"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+        </div>
+        <div class="body">
+          <div class="h1">Join once. Choose how you participate.</div>
+          <p class="p">Use email for announcements and Discord for coordination. In-person events are Bay Area-based.</p>
+
+          <div class="btnrow">
+            <a class="btn primary" href="#" target="_blank" rel="noreferrer">JOIN DISCORD</a>
+            <a class="btn" href="events.html">SEE EVENTS</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <form class="form" action="mailto:YOUR_EMAIL@DOMAIN.COM" method="post" enctype="text/plain">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="Name" autocomplete="name" placeholder="Your name" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+
+            <div>
+              <label>Clubs you’re interested in</label>
+              <div class="checkbox-grid" role="group" aria-label="Club interest">
+                <label class="checkbox"><input type="checkbox" name="Clubs" value="Mycology" /> Mycology Club</label>
+                <label class="checkbox"><input type="checkbox" name="Clubs" value="Robotics" /> Robotics Club</label>
+                <label class="checkbox"><input type="checkbox" name="Clubs" value="Calligraphy" /> Calligraphy Club</label>
+                <label class="checkbox"><input type="checkbox" name="Clubs" value="Propose a new club" /> I want to propose a new club</label>
+              </div>
+            </div>
+
+            <div>
+              <label for="note">Anything else?</label>
+              <textarea id="note" name="Note" placeholder="Availability, location, what you want to learn, etc."></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">SEND</button>
+          </form>
+
+          <p class="small" style="margin-top:10px;">Replace <strong>YOUR_EMAIL@DOMAIN.COM</strong> with your email (or replace the form with a Google Form link).</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">If you want, we can convert this to a real form without a backend (Netlify Forms).</footer>
+  </div>
+</body>
+</html>

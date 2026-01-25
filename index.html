@@ -1,13 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anti-Doom-Scroll Social Club</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
 
-<!doctype html><html><head><meta charset="utf-8">
-<title>Anti-Doom-Scroll Social Club</title>
-<link rel="stylesheet" href="assets/css/style.css"></head>
-<body><div class="container">
-<header><strong>ANTI-DOOM-SCROLL SOCIAL CLUB</strong>
-<nav><a href="index.html">Home</a><a href="clubs.html">Clubs</a>
-<a href="events.html">Events</a><a href="join.html">Join</a>
-<a href="tools.html">Tools</a><a href="about.html">About</a></nav></header>
-<div class="window">
-<h1>Let’s get off the phone and make friends.</h1>
-<p>Third-spaces are wherever we make it.</p>
-</div></div></body></html>
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <div class="title">ANTI-DOOM-SCROLL SOCIAL CLUB</div>
+          <div class="kicker">A practical community network for third-spaces</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">HOME</a>
+        <a href="clubs.html">CLUBS</a>
+        <a href="events.html">EVENTS</a>
+        <a href="join.html">JOIN</a>
+        <a href="tools.html">TOOLS</a>
+        <a href="about.html">ABOUT</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section class="window">
+        <div class="bar">
+          <div class="name">CONTROL PANEL</div>
+          <div class="controls" aria-hidden="true"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+        </div>
+        <div class="body">
+          <div class="h1">Let’s get off the phone and make friends.</div>
+          <p class="p">Third-spaces are wherever we make it. This site is a directory of clubs that meet in real life (Bay Area) and online (Discord + Zoom learning sessions).</p>
+
+          <div class="btnrow">
+            <a class="btn primary" href="clubs.html">VIEW CLUBS</a>
+            <a class="btn" href="events.html">UPCOMING EVENTS</a>
+            <a class="btn" href="join.html">JOIN NETWORK</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="y"></span> Anti-Doom-Scroll Social Club</footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
